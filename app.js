@@ -59,6 +59,6 @@ app.post('/', (req, res) => {
 
 // Local port run
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log('Sever is running on port 3000');
 })
